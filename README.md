@@ -6,18 +6,12 @@
 ### Cài đặt thư viện
 
 ```bash
-pip install ultralytics opencv-python pillow
-```
-
-Nếu chạy trên môi trường headless / server:
-
-```bash
-pip install ultralytics opencv-python-headless pillow
+pip install -r requirements.txt
 ```
 ---
 
 
-### 3) `image_folder_manager.py`
+### `image_folder_manager.py`
 
 Script quản lý ảnh/folder bằng giao diện GUI Tkinter.
 
@@ -35,15 +29,6 @@ python image_folder_manager.py
 ```
 
 Nếu không truyền đường dẫn, chương trình sẽ mở hộp thoại chọn thư mục.
-
----
-
-## Tài liệu tham khảo nhanh
-
-- YOLO: https://docs.ultralytics.com/
-- OpenCV: https://opencv.org/
-- BoT-SORT tracker: https://github.com/NirAharon/BoT-SORT
-
 ---
 
 ## Kết luận
