@@ -3,3 +3,5 @@
 !README.md
 !.gitignore
 !requirements.txt
+!reid_pipeline.py
+!botsort_reid.yaml
