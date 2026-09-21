@@ -10,6 +10,17 @@ pip install -r requirements.txt
 ```
 ---
 
+### `reid_pipeline.py`
+
+Script xử lý video và tách người để tạo dataset Re-ID.
+
+Usage:
+
+```bash
+python reid_pipeline.py --video_dir "path/to/video" --out "path/to/output" --tracker botsort_reid.yaml
+```
+
+---
 
 ### `image_folder_manager.py`
 
