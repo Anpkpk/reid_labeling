@@ -1,0 +1,16 @@
+# Cấu hình BoT-SORT có bật Re-ID (so khớp ngoại hình)
+# Giúp giữ đúng ID của 1 người dù họ bị che khuất hoặc rời khung hình rồi quay lại
+tracker_type: botsort
+track_high_thresh: 0.5
+track_low_thresh: 0.1
+new_track_thresh: 0.6
+track_buffer: 60        # số frame giữ "bộ nhớ" của 1 track trước khi xoá hẳn (tăng lên nếu video người hay bị che khuất lâu)
+match_thresh: 0.8
+fuse_score: True
+
+# Bật Re-ID bằng đặc trưng ngoại hình (quan trọng nhất để tránh tạo ID trùng)
+with_reid: True
+model: auto              # tự dùng model re-id mặc định của ultralytics
+proximity_thresh: 0.5
+appearance_thresh: 0.25
+gmc_method: sparseOptFlow
